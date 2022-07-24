@@ -6,11 +6,16 @@ Return list_to_map variable
 
 
 */
+void main() {
+  print(func([2, 4, 5, 6], ['one', 'two', 'three', 'four']));
+}
 
 Map func(List lst1, List lst2) {
-  return;
-}
-
-void main() {
-  print(func());
-}
+  int i = 0;
+  Map data = {};
+  while (i < lst1.length) {
+    data[lst1[i]] = lst2[i];
+    i++;
+  }
+  return data;
+} 
