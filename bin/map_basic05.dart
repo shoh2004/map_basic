@@ -7,9 +7,11 @@ Then return the map.
 */
 
 Map func() {
-  return;
+  Map data = {};
+  data['code'] = 'school';
+  return data;
 }
 
 void main() {
   print(func());
-}
+} 
